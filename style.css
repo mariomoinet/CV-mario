@@ -1,0 +1,513 @@
+a:visited {
+  color: #2c56ed;
+}
+
+
+/*-------------Header---------------------*/
+
+header {
+  display: flex;
+  background-color: rgba(3, 169, 244, 0.9);
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+#nom_contenant {
+  display: flex;
+}
+
+h1 {
+  margin-left: 10px;
+  font-size: 1.7em;
+  color: white;
+}
+
+
+/*----------------Background--------------------*/
+
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  height: calc(100%);
+  height: -o-calc(100%);
+  /*opera*/
+  height: -webkit-calc(100%);
+  /*chrome, safari */
+  height: -moz-calc(100%);
+  /*firefox*/
+  color: white;
+  font-family: 'natlog';
+  position: relative;
+}
+
+#photo1 {
+  background-image: url("image/FOND1.jpg");
+}
+
+#photo2 {
+  background-image: url("image/FOND2.jpg");
+}
+
+#photo3 {
+  background-image: url("image/FOND3.jpg");
+}
+
+#photo4 {
+  background-image: url("image/FOND4.jpg");
+}
+
+#photo5 {
+  background-image: url("image/FOND5.jpg");
+}
+
+#photo6 {
+  background-image: url("image/FOND6.jpg");
+}
+
+
+/*-----------------Profil------------------------*/
+
+#profil {
+  display: flex;
+  height: 400px;
+}
+
+#profil_photo_container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil_photo {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/photomario.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#profil_photo_container:hover #profil_photo {
+  background-image: url("image/photomario.jpg");
+  background-size: contain;
+}
+
+#profil_personalite {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(215, 233, 232, 0.95);
+}
+
+#profil_personaliteA, #profil_personaliteB {
+  flex: 1;
+  text-align: center;
+  color: #10376a;
+  font-size: 3.5vw;
+}
+
+#profil_personaliteB {
+  display: none;
+  a:visited {
+    color: gray;
+  }
+}
+
+#profil_personalite:hover #profil_personaliteB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil_personalite:hover #profil_personaliteA {
+  display: none;
+}
+
+#profil_qualite {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(184, 212, 222, 0.86);
+}
+
+#profil_qualiteA, #profil_qualiteB {
+  flex: 1;
+  text-align: center;
+  color: #10376a;
+  font-size: 3.5vw;
+}
+
+#profil_qualiteB {
+  display: none;
+}
+
+#profil_qualite:hover #profil_qualiteB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(182, 35, 79);
+}
+
+#profil_qualite:hover #profil_qualiteA {
+  display: none;
+}
+
+
+/*-----------------J'aime------------------------*/
+
+#jaime {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#jaime_titre {
+  flex: 1;
+  height: 100% height: 100px;
+  background-color: rgba(10, 76, 108, 0.5);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+}
+
+#jaime_image_container {
+  flex: 2;
+  background-color: rgba(3, 169, 244, 0.4);
+  display: flex;
+  height: 425px;
+}
+
+.jaime_gauche {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/CSM6.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+
+.jaime_gauche:hover #jaime_gaucheb {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#jaime_gaucheb {
+  display: none;
+}
+
+#jaime_center {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.jaime_center_image_A, .jaime_center_image_B, .jaime_center_image_C {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+
+.jaime_center_image_A {
+  background-image: url("image/boxe.jpg");
+  text-align: center;
+}
+
+#jaime_center_image_Ab {
+  display: none;
+}
+
+.jaime_center_image_A:hover #jaime_center_image_Ab {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jaime_center_image_B {
+  background-image: url("image/geek.jpg");
+  text-align: center;
+}
+
+#jaime_center_image_Bb {
+  display: none;
+}
+
+.jaime_center_image_B:hover #jaime_center_image_Bb {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jaime_center_image_C {
+  background-image: url("image/PARTY2.jpg");
+  background-position: center bottom 13%;
+  text-align: center;
+}
+
+#jaime_center_image_Cb {
+  display: none;
+}
+
+.jaime_center_image_C:hover #jaime_center_image_Cb {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#jaime_droit {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.jaime_droit_image_A {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  background-image: url("image/ski2.jpg");
+}
+
+#jaime_droit_image_Ab {
+  display: none
+}
+
+.jaime_droit_image_A:hover #jaime_droit_image_Ab {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.jaime_droit_image_B {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  flex: 1.1;
+  background-image: url("image/voyage5.jpg");
+}
+
+#jaime_droit_image_Bb {
+  display: none;
+}
+
+.jaime_droit_image_B:hover #jaime_droit_image_Bb {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/*-----------------Etude------------------------*/
+
+#etude_titre {
+  display: flex;
+}
+
+#dut_titre {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(3, 169, 244, 0.8);
+  border-left: 1px solid white;
+  color: #E1F5FE;
+  font-size: 3.5vw;
+}
+
+#pge_titre {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(3, 169, 244, 0.8);
+  border-left: 1px solid white;
+  color: #E1F5FE;
+  font-size: 3.5vw;
+}
+
+#formation_titre {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(3, 169, 244, 0.8);
+  border-left: 1px solid white;
+  color: #E1F5FE;
+  font-size: 3.5vw;
+}
+
+#etude {
+  display: flex;
+}
+
+#dut {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header_dut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #4FC3F7;
+  font-size: 2.5em;
+}
+
+#liste_dut {
+  display: none
+}
+
+#header_dut:hover #liste_dut {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#pge {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 245, 255, 0.9);
+}
+
+#header_pge {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #4FC3F7;
+  font-size: 2.5em;
+}
+
+#liste_pge {
+  display: none
+}
+
+#header_pge:hover #liste_pge {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#formation {
+  flex: 1;
+  background-color: rgba(194, 233, 250, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header_formation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #4FC3F7;
+  font-size: 3.5em;
+}
+
+#liste_formation {
+  display: none;
+}
+
+.header_formation:hover #liste_formation {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*----------------Travail-------------------------*/
+
+#travail_container {
+  background-color: blue;
+}
+
+
+/*----------------Compétence-------------------------*/
+
+#competences_container {
+  display: flex;
+  background-color: rgb(31, 142, 128);
+}
+
+#finance {
+  flex: 1;
+}
+
+#marketing {
+  flex: 1;
+}
+
+#informatique {
+  flex: 1;
+}
+
+#vente {
+  flex: 1;
+}
+
+#Energetique {
+  flex: 1;
+}
+
+
+/*-----------------Contact------------------------*/
+
+#contact_container {
+  background-color: blue;
+}
